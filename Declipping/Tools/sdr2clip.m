@@ -1,29 +1,31 @@
-function [clipped, masks, clipping_threshold, TrueSDR, percentage] = sdr2clip(sig, inputSDR)
+function [clipped, masks, theta, TrueSDR, percentage] = sdr2clip(sig, inputSDR)
 
-% Difference function
-diffSDR = @(theta) SNR2theta(theta, sig, inputSDR);
+% Obtain the clipping threshold, theta, that realizes clipping that results in given
+% input SDR.
 
-% Finding the optimal clipping threshold for given inputSDR
-[clipping_threshold, diff_from_desiredSDR] = fminbnd(diffSDR, 0, max(abs(sig)));
+% The function to be minimized.
+diff_fun = @(theta) obj(theta, sig, inputSDR);
 
-TrueSDR = inputSDR + diff_from_desiredSDR;
+% Find the optimal clipping threshold for given inputSDR.
+[theta, diff] = fminbnd(diff_fun, 0, max(abs(sig)));
 
-% Clipping the signal with the optimal clipping threshold
+TrueSDR = inputSDR + diff;
+
+% Clip the signal with theta
 clipped = sig;
-
-masks.Mh = (sig > clipping_threshold);
-masks.Ml = (sig < -clipping_threshold);
+masks.Mh = (sig > theta);
+masks.Ml = (sig < -theta);
 masks.Mr = ~(masks.Mh | masks.Ml);
 
-clipped(masks.Mh) = clipping_threshold;
-clipped(masks.Ml) = -clipping_threshold;
+clipped(masks.Mh) = theta;
+clipped(masks.Ml) = -theta;
 
-% Computing the the percentage of clipped samples
-percentage = (sum(masks.Mh) + sum(masks.Ml)) / length(sig) * 100;
+% Compute the percentage of clipped samples.
+percentage = (sum(masks.Mh) + sum(masks.Ml))/length(sig)*100;
 
 end
 
-function r = SNR2theta(theta,x,object)
-    clip = min(max(x,-theta) ,theta);
+function r = obj(theta, x, object)
+    clip = min(max(x,-theta), theta);
     r = abs(object - sdr(x, clip));
 end
