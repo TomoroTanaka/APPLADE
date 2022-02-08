@@ -33,7 +33,7 @@ x = x/max(abs(x));
 
 %% clipping
 SNR = 1 + 9*rand;
-fun = @(theta) SNR2theta(theta, x, SNR);
+fun = @(theta) sdr2theta(theta, x, SNR);
 theta = fminbnd(fun, 0 + eps, max(abs(x)) - eps);
 idx = abs(x) <= theta;
 

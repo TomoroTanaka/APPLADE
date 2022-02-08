@@ -1,11 +1,11 @@
-function x = Pi_Gamma(data, masks, data_clipped)
+function x = Pi_Gamma(data, idx, data_clipped)
 
 % Project the input onto the feasible set, Gamma.
 
 x = data;
-x(masks.Mr) = data_clipped(masks.Mr);
-x(masks.Mh) = max(data(masks.Mh), data_clipped(masks.Mh));
-x(masks.Ml) = min(data(masks.Ml), data_clipped(masks.Ml));
+x(idx.R) = data_clipped(idx.R);
+x(idx.H) = max(data(idx.H), data_clipped(idx.H));
+x(idx.L) = min(data(idx.L), data_clipped(idx.L));
 
 
 end

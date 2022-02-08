@@ -1,5 +1,10 @@
 function signal = voicedPartExtraction(audio, param)
 
+% Process input audio data. 
+% A voiced part is randomly selected and extracted.  
+
+rng(0)
+
 ind = detectSpeech(audio,param.Fs);
 if isempty(ind)
     idx = randi(length(audio) - param.L - 1);
