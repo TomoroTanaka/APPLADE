@@ -1,5 +1,4 @@
 # APPLADE (Adjustable Plug-and-PLay Audio DEclipper)
-***
 Tomoro Tanaka
 ***
 
