@@ -34,3 +34,9 @@ Please refer to the URL above and the paper
 >[3] V. Panayotov, G. Chen, D. Povey and S. Khudanpur, "Librispeech: An ASR corpus based on public domain audio books," 2015 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2015, pp. 5206-5210.
 
 for more information about this corpus.
+
+## Usage
+
+
+## License
+See the file named `LICENSE.pdf`.
