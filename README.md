@@ -39,15 +39,15 @@ for more information about this corpus.
 Execute `main.mlx` to perform APPLADE. The trained DNN parameters that were used in our experiments are to be used.\
 
 - `Declipping`
- - `DGTtool-main` contains DGTtool explained above including the license file.
- - `Tools` contains some functions used in `main.mlx` and so on.
- - `main_APPLADE.mlx` is the mainloop of APPLADE.
+  - `DGTtool-main` contains DGTtool explained above including the license file.
+  - `Tools` contains some functions used in `main.mlx` and so on.
+  - `main_APPLADE.mlx` is the mainloop of APPLADE.
 
 - `Training`
- - `Train_main.mlx` is for training a DNN in your own manner.
- - `Models` contains model functions to be used as a DNN.
- - `Tools` contains some functions used in `Train_main.mlx` and so on. `calcCanonicalDualWindow.m` is in this folder.
- - `modelParameters` contains the trained DNN parameters, and your own DNN parameters are also to be in this folder. 
+  - `Train_main.mlx` is for training a DNN in your own manner.
+  - `Models` contains model functions to be used as a DNN.
+  - `Tools` contains some functions used in `Train_main.mlx` and so on. `calcCanonicalDualWindow.m` is in this folder.
+   `modelParameters` contains the trained DNN parameters, and your own DNN parameters are also to be in this folder. 
 
 
 ## License
