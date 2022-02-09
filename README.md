@@ -16,7 +16,7 @@ Some functions are from
 > A simple and user-friendly MATLAB tool for computing the short-time Fourier transform (STFT) and the discrete Gabor transform (DGT).
 
 I already installed it so you can easily execute the codes. Plaese refer to the URL above or its helps for more detailed information.
-- `calcCanonicalDualWindow.m` https://doi.org/10/c3qb
+- `calcCanonicalDualWindow.m` from https://doi.org/10/c3qb \
 This is a function for generating the canonical dual window. It is from the MATLAB codes that is available in URL above. Please refer to the paper below for more detailed information and other helpful codes.
 >[2] Kohei Yatabe, Yoshiki Masuyama, Tsubasa Kusano and Yasuhiro Oikawa, "Representation of complex spectrogram via phase conversion," Acoustical Science and Technology, vol.40, no.3, May 2019. (Open Access)
 
