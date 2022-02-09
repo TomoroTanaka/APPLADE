@@ -13,7 +13,7 @@ Some functions rely on
 1. MathWorks Toolbox: You are kindly requested to download some of them, such as 'Deep Learning Toolbox' and 'Parallel Computing Toolbox'.
 2. Toolboxes available online: These are available online under the [MIT license](https://opensource.org/licenses/mit-license.php).
 - DGTtool https://github.com/KoheiYatabe/DGTtool
-  > A simple and user-friendly MATLAB tool for computing the short-time Fourier transform (STFT) and the discrete Gabor transform (DGT).
+  *A simple and user-friendly MATLAB tool for computing the short-time Fourier transform (STFT) and the discrete Gabor transform (DGT).*
 
   I already installed it so you can easily execute the codes. Plaese refer to the URL above or its helps for more detailed information.
 
