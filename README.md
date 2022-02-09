@@ -47,7 +47,7 @@ Execute `main.mlx` to perform APPLADE. The trained DNN parameters that were used
   - `Train_main.mlx` is for training a DNN in your own manner.
   - `Models` contains model functions to be used as a DNN.
   - `Tools` contains some functions used in `Train_main.mlx` and so on. `calcCanonicalDualWindow.m` is in this folder.
-   `modelParameters` contains the trained DNN parameters, and your own DNN parameters are also to be in this folder. 
+  - `modelParameters` contains the trained DNN parameters, and your own DNN parameters are also to be in this folder. 
 
 
 ## License
