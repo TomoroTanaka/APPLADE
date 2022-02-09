@@ -13,11 +13,12 @@ Some functions rely on
 1. MathWorks Toolbox: You are kindly requested to download some of them, such as 'Deep Learning Toolbox' and 'Parallel Computing Toolbox'.
 2. Toolboxes available online: These are available online under the [MIT license](https://opensource.org/licenses/mit-license.php).
 - DGTtool https://github.com/KoheiYatabe/DGTtool
-> A simple and user-friendly MATLAB tool for computing the short-time Fourier transform (STFT) and the discrete Gabor transform (DGT).
+  > A simple and user-friendly MATLAB tool for computing the short-time Fourier transform (STFT) and the discrete Gabor transform (DGT).
 
-I already installed it so you can easily execute the codes. Plaese refer to the URL above or its helps for more detailed information.
+  I already installed it so you can easily execute the codes. Plaese refer to the URL above or its helps for more detailed information.
 
 - `calcCanonicalDualWindow.m`\
-This is a function for generating the canonical dual window. It is from the MATLAB codes that is available in https://doi.org/10/c3qb. Please refer to the paper below for more detailed information and other helpful codes.
->[2] Kohei Yatabe, Yoshiki Masuyama, Tsubasa Kusano and Yasuhiro Oikawa, "Representation of complex spectrogram via phase conversion," Acoustical Science and Technology, vol.40, no.3, May 2019. (Open Access)
+  This is a function for generating the canonical dual window. It is from the MATLAB codes that is available in https://doi.org/10/c3qb. \
+  Please refer to the paper  below for more detailed information and other helpful codes.
+  >[2] Kohei Yatabe, Yoshiki Masuyama, Tsubasa Kusano and Yasuhiro Oikawa, "Representation of complex spectrogram via phase conversion," Acoustical Science and Technology, vol.40, no.3, May 2019. (Open Access)
 
