@@ -2,14 +2,14 @@
 Tomoro Tanaka
 ---------------------------------------------------
 
-This README file describes the MATLAB codes provided to test, analyze, and evaluate the methods named APPLADE.
+This README file describes the MATLAB codes provided to test, analyze, and evaluate the methods named APPLADE.\
 APPLADE is an audio declipping method introduced in the following paper
 >[1] Tomoro Tanaka, Kohei Yatabe, Masahiro Yasuda, and Yasuhiro Oikawa, "APPLADE: Adjustable plug-and-play audio declipper combining DNN with sparse optimization," (this citation will be updated upon the appearance of the paper online)\
-> Paper URL: void now
+Paper URL: void now
 
 ## Requirements
-The codes were developed in MATLAB version R2021a and have been tested in R2021a and R2021b.
-Some functions are from 
+The codes were developed in MATLAB version R2021a and have been tested in R2021a and R2021b.\
+Some functions rely on 
 1. MathWorks Toolbox: You are kindly requested to download some of them, such as 'Deep Learning Toolbox' and 'Parallel Computing Toolbox'.
 2. Toolboxes available online: These are available online under the [MIT license](https://opensource.org/licenses/mit-license.php).
 - DGTtool https://github.com/KoheiYatabe/DGTtool
