@@ -2,7 +2,7 @@ function [data_rec, dsdr_rec] = main_APPLADE(data, data_clipped, param, F)
 
 % Main file of the proposed method, APPLADE.
 % The ADMM algorithm is to be run with the proposed thresholding operator,
-% F_theta.
+% T_theta.
 % And the process of Delta SDR [dB] is also computed.
 
 % Set some starting points.
@@ -12,7 +12,7 @@ u = zeros(size(v));
 
 data_rec = data_clipped;
 
-% Define the proposed thresholding operator, F_theta.
+% Define the proposed thresholding operator, T_theta.
 param.weight = (1:513)'.^2/513^2;
 F_theta = @(X) PnP_thresholding(X, param);
 

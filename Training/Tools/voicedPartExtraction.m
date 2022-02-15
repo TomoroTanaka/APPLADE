@@ -1,7 +1,7 @@
 function signal = voicedPartExtraction(audio, param)
 
 % Process input audio data. 
-% A voiced part is randomly selected and extracted.  
+% A voiced part is selected and extracted.  
 
 rng(0)
 
