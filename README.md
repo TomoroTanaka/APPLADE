@@ -3,9 +3,7 @@
 
 This README file describes the MATLAB codes provided to test, analyze, and evaluate the methods named APPLADE.\
 APPLADE is an audio declipping method introduced in the following paper
->[1] Tomoro Tanaka, Kohei Yatabe, Masahiro Yasuda, and Yasuhiro Oikawa, "APPLADE: Adjustable plug-and-play audio declipper combining DNN with sparse optimization," (this citation will be updated upon the appearance of the paper online)\
-
-Paper URL: void now
+>[1] Tomoro Tanaka, Kohei Yatabe, Masahiro Yasuda, and Yasuhiro Oikawa, "APPLADE: Adjustable plug-and-play audio declipper combining DNN with sparse optimization," in IEEE Int. Conf. Acoust. Speech Signal Process. (ICASSP), 2022 (accepted).\
 
 ## Requirements
 The codes were developed in MATLAB version R2021a and have been tested in R2021a and R2021b.\
