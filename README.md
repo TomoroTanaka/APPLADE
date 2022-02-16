@@ -1,5 +1,6 @@
 # APPLADE (Adjustable Plug-and-PLay Audio DEclipper)
 **Tomoro Tanaka (Department of Intermedia Art and Science, Waseda University, Tokyo, Japan)**
+[![DOI](https://zenodo.org/badge/456819164.svg)](https://zenodo.org/badge/latestdoi/456819164)
 
 This README file describes the MATLAB codes provided to test, analyze, and evaluate the methods named APPLADE.\
 APPLADE is an audio declipping method introduced in the following paper
